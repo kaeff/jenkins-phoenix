@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1.15">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1459468555785</timestamp>
+  <startTime>1459468555800</startTime>
+  <result>SUCCESS</result>
+  <duration>5152</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>node {
+   stage &apos;Stage 1&apos;
+   echo &apos;Hello World 1&apos;
+   stage &apos;Stage 2&apos;
+   echo &apos;Hello World 2&apos;
+}</script>
+    <loadedScripts class="map"/>
+    <sandbox>false</sandbox>
+    <iota>11</iota>
+    <head>1:11</head>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>
